@@ -9,13 +9,68 @@
         tools:showIn="@layout/activity_main"
         tools:context=".MainActivity">
 
-    <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Hello World!"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="parent"/>
 
+    <TableLayout
+            android:id="@+id/table_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:gravity="center"
+    >
+
+        <TableRow
+                android:id="@+id/r0"
+                style="@style/tablerow">
+            <TextView
+                    android:layout_column="0"
+                    style="@style/cell.left"/>
+            <TextView
+                    style="@style/cell.center"
+                    android:layout_column="1"
+            />
+            <TextView
+                    style="@style/cell.right"
+                    android:layout_column="2"
+            />
+
+
+        </TableRow>
+        <TableRow
+                android:id="@+id/r1"
+                style="@style/tablerow">
+            <TextView
+                    android:layout_column="0"
+                    style="@style/cell.left"/>
+            <TextView
+                    style="@style/cell.center"
+                    android:layout_column="1"
+            />
+            <TextView
+                    style="@style/cell.right"
+                    android:layout_column="2"
+            />
+
+
+        </TableRow>
+
+        <TableRow
+                android:id="@+id/r2"
+                style="@style/tablerow">
+            <TextView
+                    android:layout_column="0"
+                    style="@style/cell.bottom"/>
+            <TextView
+                    style="@style/cell.bottom"
+                    android:layout_column="1"
+            />
+            <TextView
+                    style="@style/cell"
+                    android:layout_column="2"
+            />
+
+
+        </TableRow>
+
+    </TableLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

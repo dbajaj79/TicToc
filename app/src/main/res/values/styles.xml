@@ -13,5 +13,39 @@
     </style>
     <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+    <style name="tablerow">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:background">@color/black</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="cell.left" parent="cell">
+        <item name="android:layout_marginBottom">@dimen/cell_margin</item>
+        <item name="android:layout_marginRight">@dimen/cell_margin</item>
+        <item name="android:layout_marginEnd">@dimen/cell_margin</item>
+    </style>
+    <style name="cell.center" parent="cell">
+        <item name="android:layout_marginBottom">@dimen/cell_margin</item>
+        <item name="android:layout_marginRight">@dimen/cell_margin</item>
+        <item name="android:layout_marginEnd">@dimen/cell_margin</item>
+    </style>
+    <style name="cell.right" parent="cell">
+        <item name="android:layout_marginBottom">@dimen/cell_margin</item>
+
+    </style>
+    <style name="cell.bottom" parent="cell">
+        <item name="android:layout_marginRight">@dimen/cell_margin</item>
+        <item name="android:layout_marginEnd">@dimen/cell_margin</item>
+
+    </style>
+     <style name="cell">
+        <item name="android:layout_width">@dimen/cell_height_width</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:textSize">@dimen/text_size</item>
+        <item name="android:gravity">center</item>
+        <item name="android:clickable">true</item>
+        <item name="android:layout_height">@dimen/cell_height_width</item>
+    </style>
 
 </resources>
